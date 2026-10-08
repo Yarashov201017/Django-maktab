@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="containe">
+        {% for oquvchi in oquvchilar %}
+        <div class="card2">
+            <img src="" alt="bu yerda rasm bor">
+            <h2>O'quvchi ismi: {{ oquvchi.ism }}</h2>
+            <h2>O'quvchi familiyasi: {{ oquvchi.familiya }}</h2>
+            <h2>O'quvchi yoshi: {{ oquvchi.yosh }}</h2>
+        </div>
+        {% endfor %}
+    </div> <br>
+
+<div class="container">
+    {% for sinff in chsb %}
+    <div class="card">
+        <h2>Sinf: {{ sinff.sinf }}</h2>
+        <h2>O'quvchilar soni: {{ sinff.oquvchilar_soni }}</h2>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
